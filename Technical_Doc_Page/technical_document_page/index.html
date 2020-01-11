@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Technical_Document_Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header>SQL Introduction</header>
+  <ul>
+    <li><a class = "nav-link" href = "#WhatSQL"> What is SQL? </a>
+    </li>
+    <li> <a class = "nav-link" href = "#AdvantageSQL"> Advantages of SQL </a> </li>
+    <li><a class = "nav-link" href = "#DisadvantageSQL"> Disadvantages to SQL </a> </li>
+    <li><a class = "nav-link" href = "#ExamplesSQLSoftware"> Examples of SQL Software Companies </a> </li>
+    <li><a class = "nav-link" href = "#SampleTSQL"> Examples T-SQL Scripting</a> </li>
+  </ul>
+</nav>
+
+   <main id ="main-doc">
+    <section class="main-section" id ="WhatSQL">
+      <header>What is SQL?</header>
+      <article>
+        <p>Structured Query Language is what SQL stands for and is a scripting database language used to access, insert, delete or update data in SQL Databases.
+        </p>
+        <p>SQL databases are primarily called RDBMS or Relational Databases Management Systems.
+        </p>
+      </article>
+    </section>
+    
+    <section class="main-section" id ="AdvantageSQL">
+      <header>Advantages of SQL</header>
+            <article>
+      <p>There are many advantages to developing and running a SQL database to organize your Data including:
+</p>
+        <ul>
+          <li>SQL databases are vertically stable </li>
+          <li>SQL databases are an ideal choice for the complex query intensive </li> <li>Should be used over other database methods when data validity is super important
+          <li>Best option when you need to solve ACID problems and need to support dynamnic queries</li>                   
+      </ul>
+      <article>
+    </section>
+  
+    <section class="main-section" id ="DisadvantageSQL">
+      <header>Disadvantages of SQL</header>
+            <article>
+      <p>There are some times when you Don't want to use a SQL RDBMS Database and may opt for another solution, such as NoSQL.  Here are a few of those instances where SQL might not work for you:        
+              </p>
+              <ul><li>Large amounts of data that FACEBOOK or GOOGLE take in will suffer in performance with a SQL System and need the flexibility of a NoSQL system.</li>
+                <li>SQL databases are not suitable for hierarchical data storage</li>
+<li>NoSQL databases can be document based, key-value pairs or graph databases where SQL databases are solely table based.</li>
+               </ul>
+      </article>
+        </section>
+              
+    <section class="main-section" id ="ExamplesSQLSoftware">
+      <header>Examples of SQL Software Companies</header>
+            <article>
+    <p>Here are some example Software companies that specialize in SQL Software</p>
+              <ul><li>Oracle</li>
+                <li>Postgres</li>
+                <li>Microsoft SQL</li>
+                <li>Sybase</li>
+                <li>Microsoft Access</li>
+                </ul>
+                </article>
+        </section>
+      
+               <section class="main-section" id ="SampleTSQL">
+      <header>Examples T-SQL Scripting</header>
+            <article>
+              <p> Here are some Transaction Structured Query Language (TSQL) scripting syntax: </p>
+              <ul>
+                <code>select top 5 * from dbo.guestdb </code>
+                <code>begin tran
+                      insert * into customerbackup from customer
+                      where date > '1/5/2018'
+                  commit tran </code>
+                  <code>begin tran
+                        delete from customer
+                        where date > '1/5/2010'
+                    commit tran </code>
+                <code>begin tran
+                      update customer
+                      set state = 'MD'
+                      where state like 'Maryland'
+                  commit tran </code>
+                <code> select * from guestdb where Title is null and state = 'MD'</code>
+              </ul>
+              </article>
+        </section>
+      </main>
+<!-- partial -->
+  
+</body>
+</html>
